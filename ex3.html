@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            height: 150px;
+        }
+
+        .logo {
+            background-color: blue;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            padding-left: 40px;
+            font-size: 24px;
+        }
+
+        .email {
+            background-color: green;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            padding-left: 40px;
+            font-size: 24px;
+        }
+
+        .nav {
+            background-color: red;
+            padding: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-item {
+            background-color: yellow;
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+
+        .content {
+            display: flex;
+            min-height: 300px;
+        }
+
+        .left-sidebar {
+            background-color: blue;
+            width: 50%;
+            padding: 40px;
+            font-size: 24px;
+        }
+
+        .right-content {
+            background-color: green;
+            width: 50%;
+            padding: 40px;
+            font-size: 24px;
+        }
+
+        .footer {
+            background-color: yellow;
+            padding: 40px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Logo image here</div>
+        <div class="email">newton.tiwari@deerwalk.edu.np</div>
+    </div>
+
+    <nav class="nav">
+        <div class="nav-item">First Menu</div>
+        <div class="nav-item">Second Menu</div>
+        <div class="nav-item">Third Menu</div>
+        <div class="nav-item">Fourth Menu</div>
+    </nav>
+
+    <div class="content">
+        <div class="left-sidebar">Left Bar Contents here</div>
+        <div class="right-content">Right Bar content Here</div>
+    </div>
+
+    <footer class="footer">
+        Footer Content Here
+    </footer>
+</body>
+</html>

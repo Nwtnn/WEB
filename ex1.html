@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        div {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+            margin-right: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="url"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 200px;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        textarea {
+            vertical-align: top;
+            height: 60px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 5px 15px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" value="1" required>
+        </div>
+
+        <div>
+            <label for="birthdate">Birthdate</label>
+            <input type="date" id="birthdate" name="birthdate" value="2022-09-20" required>
+        </div>
+
+        <div>
+            <label>Language u know</label>
+            <div style="display: inline-block;">
+                <input type="checkbox" id="java" name="language" value="java">
+                <label for="java">JAVA</label>
+                <br>
+                <input type="checkbox" id="c" name="language" value="c">
+                <label for="c">C</label>
+                <br>
+                <input type="checkbox" id="python" name="language" value="python">
+                <label for="python">Python</label>
+            </div>
+        </div>
+
+        <div>
+            <label>Gender</label>
+            <div style="display: inline-block;">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="blood">Blood Group</label>
+            <select id="blood" name="blood">
+                <option value="O+ve">O+ve</option>
+                <option value="O-ve">O-ve</option>
+                <option value="A+ve">A+ve</option>
+                <option value="A-ve">A-ve</option>
+                <option value="B+ve">B+ve</option>
+                <option value="B-ve">B-ve</option>
+                <option value="AB+ve">AB+ve</option>
+                <option value="AB-ve">AB-ve</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="about">About</label>
+            <textarea id="about" name="about"></textarea>
+        </div>
+
+        <div>
+            <label for="file">File</label>
+            <input type="file" id="file" name="file">
+        </div>
+
+        <div>
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" value="9841389377">
+        </div>
+
+        <div>
+            <label for="url">URL</label>
+            <input type="url" id="url" name="url">
+        </div>
+
+        <div>
+            <label for="color">Color</label>
+            <input type="color" id="color" name="color">
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div class="buttons">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
